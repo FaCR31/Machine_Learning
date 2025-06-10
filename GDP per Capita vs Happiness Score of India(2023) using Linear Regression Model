@@ -5,7 +5,7 @@ from sklearn.linear_model import LinearRegression
 
 # Download and prepare the data
 #data_root = "file:///Users/chaitanyanitinkumarranshur/Downloads/API_NY.GDP.PCAP.CD_DS2_en_csv_v2_2702/API_NY.GDP.PCAP.CD_DS2_en_csv_v2_2702.csv"
-lifesat = pd.read_csv("/Users/chaitanyanitinkumarranshur/Downloads/gdp-vs-happiness/gdp-vs-happiness.csv")
+lifesat = pd.read_csv("https://github.com/FaCR31/Machine_Learning/blob/FaCR31-project-1/gdp-vs-happiness.csv")
 lifesat = lifesat[["GDP per capita, PPP (constant 2021 international $)", "Cantril ladder score"]].dropna()
 X = lifesat[["GDP per capita, PPP (constant 2021 international $)"]].values
 y = lifesat[["Cantril ladder score"]].values
